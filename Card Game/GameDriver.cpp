@@ -22,14 +22,30 @@ private:
 
 public:
     //Constructor
-    GameDriver(){
-        player1 = Player("Player 1");
-        player1 = Player("Player 1");
+    GameDriver(): player1("Player 1"), player2("Player 2"), player3("Player 3"), player4("Player 4"){
+        //Shuffle deck
+        deck.shuffleDeck();
+        
+        //Print shuffled deck
+        deck.printDeck();
     }
     
     //Deal
-    
+    void deal(){
+        //Player 1
+        player1.draw(deck.drawCard());
+        
+        //Player 2
+        
+        
+        //Player 3
+        
+        
+        //Player 4
+    }
     
     //GameOver
-
+    bool gameOver(){
+        return false;
+    }
 };

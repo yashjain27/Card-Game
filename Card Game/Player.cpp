@@ -25,6 +25,9 @@ private:
     
 public:
     //Constructor
+    Player(){}; //Empty Constructor
+    
+    //Overloaded constructor 
     Player(string name){
         this->name = name;
     }
