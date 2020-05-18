@@ -12,25 +12,25 @@
 #include <vector>
 #include <unordered_map>
 #include "Card.h"
-using namespace std;
+using String = std::string;
 
 class Player{
 
 private:
-    string name;
-    bool isWinner;
-    unsigned valueCounter; //Count number of pairs for same value cards
-    unsigned faceCounter;  //Count number of face cards
-    vector<string> valueStack;
-    vector<string> faceStack;
-    unordered_map<string, string> hand;
+    String _name;
+    bool _isWinner;
+    unsigned _valueCounter; //Count number of pairs for same value cards
+    unsigned _faceCounter;  //Count number of face cards
+    std::vector<String> _valueStack;
+    std::vector<String> _faceStack;
+    std::unordered_map<String, String> _hand;
     
 public:
     //Constructor
     Player(); //Empty Constructor
     
     //Overloaded constructor
-    Player(string name);
+    Player(String name);
     
     /// Player to receive a card from the deck
     /// @param card - card received by the player from the deck

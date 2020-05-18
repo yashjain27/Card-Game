@@ -14,13 +14,13 @@
 
 class GameDriver{
 private:
-    Player player1;
-    Player player2;
-    Player player3;
-    Player player4;
-    Player winningPlayer;
-    Deck deck;
-    bool winner;
+    Player _player1;
+    Player _player2;
+    Player _player3;
+    Player _player4;
+    Player _winningPlayer;
+    Deck _deck;
+    bool _winner;
 
 public:
     //Constructor

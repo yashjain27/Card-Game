@@ -9,26 +9,26 @@
 #ifndef CARD_H
 #define CARD_H
 #include <string>
-using namespace std;
+using String = std::string;
 
 class Card{
 
 private:
-    string rank;
-    string suit;
-    bool face;
+    std::string _rank;
+    std::string _suit;
+    bool _face;
     
 public:
     //Constructor
-    Card(string rank, string suit, bool face);
+    Card(std::string rank, std::string suit, bool face);
     
     /// Get the rank of the card
     /// @return the rank of the card
-    string getRank();
+    String getRank();
     
     /// Get the card's suit
     /// @return the suit of the card
-    string getSuit();
+    String getSuit();
     
     
     /// Get the boolean value of the card of whether it is a face card
@@ -37,7 +37,7 @@ public:
     
     /// Get the full card description
     /// @return the rank and suit of the card
-    string getCard();
+    String getCard();
     
 };
 

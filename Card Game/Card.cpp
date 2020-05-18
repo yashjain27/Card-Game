@@ -1,33 +1,29 @@
 #include "Card.h"
 
 //Constructor
-Card::Card(string rank, string suit, bool face){
-    this->rank = rank;
-    this->suit = suit;
-    this->face = face;
-}
+Card::Card(std::string rank, std::string suit, bool face):_rank(rank),_suit(suit),_face(face){}
 
 /// Get the rank of the card
 /// @return the rank of the card
-string Card::getRank(){
-    return rank;
+String Card::getRank(){
+    return _rank;
 }
     
 /// Get the card's suit
 /// @return the suit of the card
-string Card::getSuit(){
-    return suit;
+String Card::getSuit(){
+    return _suit;
 }
     
     
 /// Get the boolean value of the card of whether it is a face card
 /// @return the boolean value of whether it's a face card
 bool Card::getFace(){
-    return face;
+    return _face;
 }
 
 /// Get the full card description
 /// @return the rank and suit of the card
-string Card::getCard(){
-    return (rank + " of " + suit);
+String Card::getCard(){
+    return (_rank + " of " + _suit);
 }

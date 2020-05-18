@@ -10,14 +10,16 @@
 #define DECK_H
 #include <iostream>
 #include <vector>
+#include <time.h>
 #include "Card.h"
-using namespace std;
+using String = std::string;
+
 
 class Deck{
 
 private:
     //Pop last element O(1), search O(1) for swapping, Delete last element O(1), Push to tail O(1)
-    vector<Card> deck;
+    std::vector<Card> _deck;
     
 public:
     //Constructor
