@@ -34,18 +34,46 @@ public:
     void deal(){
         //Player 1
         player1.draw(deck.drawCard());
+        if((winner = player1.checkWin()) == true){
+            //Player 1 has won declare victory and show the winning combinations
+            player1.toPrintWin();
+            return;
+        }
         
         //Player 2
-        
+        player2.draw(deck.drawCard());
+        if((winner = player2.checkWin()) == true){
+            //Player 2 has won declare victory and show the winning combinations
+            player2.toPrintWin();
+            return;
+        }
         
         //Player 3
-        
+        player3.draw(deck.drawCard());
+        if((winner = player3.checkWin()) == true){
+            //Player 3 has won declare victory and show the winning combinations
+            player3.toPrintWin();
+            return;
+        }
         
         //Player 4
+        player4.draw(deck.drawCard());
+        if((winner = player4.checkWin()) == true){
+            //Player 4 has won declare victory and show the winning combinations
+            player4.toPrintWin();
+            return;
+        }
+        
+        //Check if deck is empty, if empty, players should return cards and deck should be reshuffled
+        if(deck.isOver()){
+            deck.buildDeck();
+            deck.shuffleDeck();
+            deck.printDeck();
+        }
     }
     
     //GameOver
     bool gameOver(){
-        return false;
+        return winner;
     }
 };

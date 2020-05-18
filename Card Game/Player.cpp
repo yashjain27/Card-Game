@@ -34,6 +34,7 @@ public:
     
     //Draw a card
     void draw(Card card){
+        cout << name << " has recieved " << card.getCard();
         string cardValue = card.getRank();
         //Check for face card, if found return without proceeding to value card check
         if(card.getFace()){

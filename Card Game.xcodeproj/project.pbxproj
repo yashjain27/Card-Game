@@ -33,6 +33,7 @@
 		292B9CBB2471D724001C35A4 /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
 		292B9CBD24720B6C001C35A4 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		292B9CBF24722952001C35A4 /* GameDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameDriver.cpp; sourceTree = "<group>"; };
+		292B9CC124723825001C35A4 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				292B9CAF2470ED9B001C35A4 /* main.cpp */,
+				292B9CC124723825001C35A4 /* Card.h */,
 				292B9CB92471D003001C35A4 /* Card.cpp */,
 				292B9CBB2471D724001C35A4 /* Deck.cpp */,
 				292B9CBD24720B6C001C35A4 /* Player.cpp */,

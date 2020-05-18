@@ -37,9 +37,6 @@ public:
     /// Draw the top card from the deck
     /// @return the Card object which is on top of the Deck
     Card drawCard(){
-        if(isOver()){
-            throw "Deck is over, can't draw card. Please return cards and re-shuffle.";
-        }
         Card cardToReturn = deck.back();
         deck.pop_back();
         return cardToReturn;
@@ -115,6 +112,7 @@ public:
     /// @return true if the deck is empty, false otherwise
     bool isOver(){
         if(deck.empty()){
+            cout << "Deck is over. Please return cards and re-shuffle." << endl;
             return true;
         }else{
             return false;
@@ -123,8 +121,10 @@ public:
     
     /// Print the current shuffled deck
     void printDeck(){
+        cout << "Shuffled deck: "<< endl;
         for(unsigned  i = 0; i < deck.size(); i++){
             cout << deck.at(i).getCard() << endl;
         }
+        cout << "*****************************"<< endl;
     }
 };
