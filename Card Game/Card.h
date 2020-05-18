@@ -6,8 +6,10 @@
 //  Copyright © 2020 Yash Jain. All rights reserved.
 //
 
-#ifndef Card_h
-#define Card_h
+#ifndef CARD_H
+#define CARD_H
+#include <string>
+using namespace std;
 
 class Card{
 
@@ -18,24 +20,24 @@ private:
     
 public:
     //Constructor
-    Card(string rank, string suit, bool face){};
+    Card(string rank, string suit, bool face);
     
     /// Get the rank of the card
     /// @return the rank of the card
-    string getRank(){};
+    string getRank();
     
     /// Get the card's suit
     /// @return the suit of the card
-    string getSuit(){};
+    string getSuit();
     
     
     /// Get the boolean value of the card of whether it is a face card
     /// @return the boolean value of whether it's a face card
-    bool getFace(){};
+    bool getFace();
     
     /// Get the full card description
     /// @return the rank and suit of the card
-    string getCard(){};
+    string getCard();
     
 };
 

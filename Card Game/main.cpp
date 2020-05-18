@@ -7,13 +7,16 @@
 //
 
 #include <iostream>
-#include "GameDriver.cpp"
+#include "GameDriver.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     GameDriver gameDriver = GameDriver();
     
-    while(!gameDriver.gameOver()){}
+    while(!gameDriver.gameOver()){
+        gameDriver.deal();
+    }
     
+    cout << "Over" << endl;
     return 0;
 }
