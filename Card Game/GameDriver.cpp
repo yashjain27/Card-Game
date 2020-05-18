@@ -16,9 +16,11 @@ GameDriver::GameDriver(): player1("Player 1"), player2("Player 2"), player3("Pla
     
     //Print shuffled deck
     deck.printDeck();
+    
+    cout << "Let the game begin!" << endl << endl;
 }
 
-//Deal
+/// Deal a round of 4 cards evenly amongst the 4 players
 void GameDriver::deal(){
     //Player 1
     player1.draw(deck.drawCard());
@@ -63,7 +65,8 @@ void GameDriver::deal(){
     }
 }
 
-//GameOver
+/// Check if game is over
+/// @return a bool indicating whether the game is over or not
 bool GameDriver::gameOver(){
     return winner;
 }

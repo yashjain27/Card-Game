@@ -32,16 +32,17 @@ public:
     //Overloaded constructor
     Player(string name);
     
-    //Draw a card
+    /// Player to receive a card from the deck
+    /// @param card - card received by the player from the deck
     void draw(Card card);
     
-    //isWinner
+    /// Check if player won
     bool checkWin();
     
-    //Return cards back to restart the game
+    /// Return cards back to restart the game
     void restart();
     
-    //Print winning combination
+    /// Print winning combination
     void toPrintWin();
     
 };

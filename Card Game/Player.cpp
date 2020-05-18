@@ -15,7 +15,8 @@ Player::Player(string name):isWinner(false), valueCounter(0), faceCounter(0){
     this->name = name;
 }
 
-//Draw a card
+/// Player to receive a card from the deck
+/// @param card - card received by the player from the deck
 void Player::draw(Card card){
     cout << name << " has received " << card.getCard() << endl;
     string cardValue = card.getRank();
@@ -38,7 +39,7 @@ void Player::draw(Card card){
     }
 }
 
-//isWinner
+/// Check if player won
 bool Player::checkWin(){
     if(valueCounter >= 2 && faceCounter >= 2){
         isWinner = true;
@@ -48,13 +49,13 @@ bool Player::checkWin(){
     return isWinner;
 }
 
-//Return cards back to restart the game
+/// Return cards back to restart the game
 void Player::restart(){
     //Clear hand as the player has to return cards back to the deck
     hand.clear();
 }
 
-//Print winning combination
+/// Print winning combination
 void Player::toPrintWin(){
     if(isWinner){
         string firstCombo = name + " won! First combo: " + valueStack.at(0) + " and " + faceStack.at(0);

@@ -17,6 +17,6 @@ int main(int argc, const char * argv[]) {
         gameDriver.deal();
     }
     
-    cout << "Over" << endl;
+    cout << "Game Over" << endl;
     return 0;
 }

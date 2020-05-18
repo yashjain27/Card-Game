@@ -26,10 +26,11 @@ public:
     //Constructor
     GameDriver();
     
-    //Deal
+    /// Deal a round of 4 cards evenly amongst the 4 players
     void deal();
     
-    //GameOver
+    /// Check if game is over
+    /// @return a bool indicating whether the game is over or not
     bool gameOver();};
 
 #endif /* GameDriver_h */
